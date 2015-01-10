@@ -1,4 +1,11 @@
 Grocery Rush was conceived and created by Albert Diserholt & Sunisa
 Thongdaengdee during a 72-hour Game Jam with the theme "Gathering Resources".
 
-It requires the LÖVE engine to run.
+To run on Linux or to run source, the LÖVE engine is required: https://love2d.org/
+
+Source is available at https://github.com/Drauthius/grocery-rush
+
+Version 'alpha1' is available on Google Drive:
+	For Windows: https://drive.google.com/open?id=0B7id3HJ0xQajT3pSYmtuSUhsbDA&authuser=0
+	For Mac OS X: https://drive.google.com/open?id=0B7id3HJ0xQajaklOU3JkekIwM2s&authuser=0
+	.love file: https://drive.google.com/open?id=0B7id3HJ0xQajUzdoVDJ2Z2dVOW8&authuser=0

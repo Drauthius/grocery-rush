@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="10" height="10" tilewidth="64" tileheight="64" backgroundcolor="#221134">
+ <tileset firstgid="1" name="floor" tilewidth="64" tileheight="64">
+  <image source="gfx/floor.png" width="256" height="256"/>
+  <tile id="1">
+   <properties>
+    <property name="collidable" value="true"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="collidable" value="true"/>
+   </properties>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="collidable" value="true"/>
+   </properties>
+  </tile>
+  <tile id="6">
+   <properties>
+    <property name="collidable" value="true"/>
+   </properties>
+  </tile>
+  <tile id="10">
+   <properties>
+    <property name="collidable" value="true"/>
+   </properties>
+  </tile>
+  <tile id="11">
+   <properties>
+    <property name="collidable" value="true"/>
+   </properties>
+  </tile>
+  <tile id="14">
+   <properties>
+    <property name="collidable" value="true"/>
+   </properties>
+  </tile>
+  <tile id="15">
+   <properties>
+    <property name="collidable" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="Floor" width="10" height="10">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,
+0,1,1,1,1,1,1,1,1,0,
+0,1,1,1,1,1,1,1,1,0,
+0,1,1,1,1,1,1,1,1,0,
+0,1,1,1,1,1,1,1,1,0,
+0,1,1,1,1,1,1,1,1,0,
+0,1,1,1,1,1,1,1,1,0,
+0,1,1,1,1,1,1,1,1,0,
+0,1,1,1,1,1,1,1,1,0,
+0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer name="Collision" width="10" height="10">
+  <properties>
+   <property name="collidable" value="false"/>
+  </properties>
+  <data encoding="csv">
+11,6,6,6,6,6,6,6,6,12,
+2,0,0,0,0,0,0,0,0,7,
+2,0,0,0,0,0,0,0,0,7,
+2,0,0,0,0,0,0,0,0,7,
+2,0,0,0,0,0,0,0,0,7,
+2,0,0,0,0,0,0,0,0,7,
+2,0,0,0,0,0,0,0,0,7,
+2,0,0,0,0,0,0,0,0,16,
+2,0,0,0,0,0,0,0,0,12,
+15,0,15,3,3,3,10,3,3,16
+</data>
+ </layer>
+ <objectgroup name="Collision" visible="0">
+  <object x="384" y="576" width="64" height="64">
+   <properties>
+    <property name="collidable" value="true"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="Shelves">
+  <object type="ketchup" x="192" y="192" width="64" height="128"/>
+  <object type="chips" x="256" y="576" width="64" height="128" rotation="180"/>
+  <object type="mustard" x="192" y="320" width="64" height="128"/>
+  <object type="coffee" x="63" y="128" width="64" height="64" rotation="270"/>
+  <object type="cornflakes" x="512" y="64" width="64" height="192" rotation="90"/>
+  <object type="olive oil" x="576" y="320" width="64" height="128" rotation="180"/>
+  <object type="olive oil" x="576" y="448" width="64" height="128" rotation="180"/>
+ </objectgroup>
+ <objectgroup name="Entry">
+  <object type="leftDoor" gid="9" x="64" y="576"/>
+  <object type="rightDoor" gid="10" x="128" y="576"/>
+ </objectgroup>
+ <objectgroup name="Cashiers">
+  <object x="448" y="448" width="64" height="128"/>
+ </objectgroup>
+</map>

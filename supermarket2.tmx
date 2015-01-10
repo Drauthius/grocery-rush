@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="12" height="12" tilewidth="64" tileheight="64" backgroundcolor="#2a003f">
+ <tileset firstgid="1" name="floor" tilewidth="64" tileheight="64">
+  <image source="gfx/floor.png" width="256" height="256"/>
+ </tileset>
+ <layer name="Floor" width="12" height="12">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,1,1,1,1,1,1,1,1,1,1,0,
+0,1,1,1,1,1,1,1,1,1,1,0,
+0,1,1,1,1,1,1,1,1,1,1,0,
+0,1,1,1,1,1,1,1,1,1,1,0,
+0,1,1,1,1,1,1,1,1,1,1,0,
+0,1,1,1,1,1,1,1,1,1,1,0,
+0,1,1,1,1,1,1,1,1,1,1,0,
+0,1,1,1,1,1,1,1,1,1,1,0,
+0,1,1,1,1,1,1,1,1,1,1,0,
+0,1,1,1,1,1,1,1,1,1,1,0,
+0,16,15,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer name="Collision" width="12" height="12">
+  <properties>
+   <property name="collidable" value="true"/>
+  </properties>
+  <data encoding="csv">
+11,6,6,6,6,6,6,6,6,6,6,12,
+2,0,0,0,0,0,0,0,0,0,0,7,
+14,0,0,0,0,0,0,0,0,0,0,7,
+2,0,0,0,0,0,0,0,0,0,0,7,
+2,0,0,0,0,0,0,0,0,0,0,7,
+2,0,0,0,0,0,0,0,0,0,0,7,
+2,0,0,0,0,0,0,0,0,0,0,7,
+2,0,0,0,0,0,0,0,0,0,0,7,
+2,0,0,0,0,0,0,0,0,0,0,7,
+2,0,0,0,0,0,0,0,0,0,0,7,
+2,0,0,0,0,0,0,0,0,0,0,7,
+15,0,0,3,3,3,3,3,3,3,3,16
+</data>
+ </layer>
+ <objectgroup name="Shelves">
+  <object type="salad" x="192" y="448" width="64" height="256" rotation="-360"/>
+  <object type="cereal" x="256" y="286" width="64" height="192" rotation="450"/>
+  <object type="olive oil" x="450" y="286" width="64" height="192" rotation="450"/>
+  <object type="bread" x="449" y="544" width="64" height="128" rotation="180"/>
+  <object type="mustard" x="384" y="611" width="64" height="128" rotation="270"/>
+  <object type="coffee" x="640" y="64" width="64" height="192"/>
+  <object type="carrots" x="640" y="384" width="64" height="320"/>
+  <object type="ketchup" x="513" y="545" width="64" height="128" rotation="-180"/>
+  <object type="potato chips" x="516" y="351" width="64" height="192" rotation="180"/>
+  <object type="banana" x="256" y="64" width="64" height="64"/>
+ </objectgroup>
+ <objectgroup name="Entry">
+  <object type="leftDoor" gid="9" x="64" y="704"/>
+  <object type="rightDoor" gid="10" x="128" y="704"/>
+ </objectgroup>
+ <objectgroup name="Cashiers">
+  <object x="193" y="191" width="64" height="128" rotation="450"/>
+ </objectgroup>
+</map>
